@@ -1,0 +1,52 @@
+ol {
+	list-style: none;
+}
+
+body, ol {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	position: relative;
+	width: 1020px;
+	height: 650px;
+	margin: 0 auto;
+	background: url(img/promotion.png) no-repeat 0 0;
+}
+
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+    overflow: hidden;
+}
+
+.link_point {
+	position: absolute;
+	left: 100px;
+	bottom: 106px;
+	width: 133px;
+    height: 22px;
+    opacity: 0.3;
+    background:blue;
+}
+.link_point:hover{
+	opacity: 1;
+}
+
+.link_join {
+	position: absolute;
+	bottom: 8px;
+    left: 340px;
+    width: 340px;
+    height: 70px;
+    background:red;
+    opacity: 0.3;
+}
+
+.link_join:hover{
+	opacity: 1;
+}

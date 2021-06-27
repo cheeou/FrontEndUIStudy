@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        display: table과 display: table-cell 속성을 테이블과 동일한 효과를 주기 때문에 부모인 container의 가로길이를 부여한 상태에서 한쪽의 가로길이를 안다면 aside의 가로길이는 따로 지정해줄 필요가 없다.
+        */
+        .header {
+            height: 100px;
+            background-color: lightgreen;
+        }
+
+        .container {
+            display: table;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: table-cell;
+            width: 495px;
+            /* -5px 하여 추가된 구분선 만큼 빼기 */
+            height: 300px;
+            background-color: lightsalmon;
+            border-right: 5px solid #000;
+            /* border를 이용해 구분선 추가 */
+        }
+
+        .aside {
+            display: table-cell;
+            height: 300px;
+            background-color: lightseagreen;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="container">
+            <!-- content와 aside의 묶음 영역 추가 -->
+            <div class="content">content</div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>
