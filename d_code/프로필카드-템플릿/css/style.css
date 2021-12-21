@@ -49,7 +49,7 @@ ul.contact > li > a > i {
   justify-content: center;
 }
 
-.profile_img {
+.profile .profile_img {
   margin: 0 auto;
   width: 200px;
   height: 200px;
@@ -57,15 +57,16 @@ ul.contact > li > a > i {
   overflow: hidden;
 }
 
-.profile_img img {
+.profile .profile_img img {
   width: 200px;
 }
 
-.main_txt {
+h3.main_txt {
   margin-top: 15px;
   text-align: center;
 }
-.sub_txt {
+
+p.sub_txt {
   text-align: center;
   color: #999;
 }
