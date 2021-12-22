@@ -1,0 +1,83 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&display=swap');
+
+*{ margin: 0; padding: 0;}
+ul,ol,li{ list-style: none;}
+a{ text-decoration: none;}
+
+/* header */
+header{
+   width:100%; height:10vh; 
+   border-bottom:1px solid #888; 
+   position:absolute; top:0; left:0; 
+   z-index:1; 
+}
+header h1{
+   font:bold 24px/1 "Architects Daughter"; 
+   color:#fff; 
+   position:absolute; top:50%; margin-top:-12px; left:6vw; 
+}
+header #gnb{
+   position:absolute;  
+   left:50%; top:50%; margin-top:-8px; 
+   transform:translateX(-50%);
+}
+header #gnb li{
+   float:left; margin-right:20px; 
+}
+header #gnb li a{
+   font:16px/1 "Architects Daughter"; 
+   color:#fff; 
+   letter-spacing:1px; 
+}
+
+header .util{
+   position:absolute; right:6vw; top:50%; margin-top:-8px; 
+}
+header .util li{
+   float:left; margin-left:20px; 
+}
+header .util li a{
+   font-size:16px; color:#fff; 
+}
+
+/* figure */
+figure{
+   width:100%; height:100vh; 
+   position:absolute; top:0; left:0; 
+   z-index:0; 
+   /* background:url(../img/test.jpg) no-repeat center center/cover; */
+}
+figure video{
+   width:100%; height:100%; 
+   object-fit:cover; 
+}
+
+figure .txt{
+   position:absolute; left:6vw;  
+   top:50%; transform:translateY(-50%);
+}
+figure .txt p{
+   font:8vw/1 "Fredericka the Great";
+   color:#fff; 
+}
+
+figure .txt ul{
+   margin-top:30px; 
+}
+figure .txt ul li{
+   float:left; margin-right:30px; 
+}
+figure .txt ul li i{
+   font-size:20px; color:#fff; margin-right:20px; 
+}
+figure .txt ul li strong{
+   font:14px/1 'arial'; color:#fff; letter-spacing:1px; 
+}
+
+/* footer */
+footer{
+   position:absolute; 
+   bottom:5vh; left:50%; transform:translateX(-50%);
+   font:12px/1 'arial'; color:#ddd; letter-spacing:2px; 
+}
