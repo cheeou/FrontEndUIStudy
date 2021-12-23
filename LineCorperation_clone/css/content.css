@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* common */
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+body {
+  height: 3000px;
+}
+
+.clfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mvclip {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+@media (max-width: 1180px) {
+  .mvclip{
+    width: 1180px;
+  }
+}
+
+/* header */
+
