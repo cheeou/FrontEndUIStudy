@@ -11,7 +11,7 @@
 [10. @keyframes 애니메이션명](#keyframes-애니메이션명)<br/>
 <br/>
 
-### 📌 reset
+### reset
 ```
 *{ margin: 0; padding: 0; }
 ul,ol,li{ list-style: none; }
@@ -21,7 +21,7 @@ table{ border-collapse: collapse; }
 
 <br/>
 
-### 📌 요소 숨김처리
+### 요소 숨김처리
 ```
 .hidden{
     postion: absolute;
@@ -40,14 +40,14 @@ table{ border-collapse: collapse; }
 
 <br/>
 
-### 📌  텍스트 말줄임
+###  텍스트 말줄임
  - 한줄의 경우: ```display:block; overflow:hidden; text-overflow:ellipse; white-space:nowrap;```
  - 여러줄의 경우: ```overflow:hidden; text-oveflow:ellipse; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:줄 수;```
  - [예시 보러가기](https://ekgoddldi.tistory.com/171?category=980959)
 
 <br/>
 
-### 📌 float
+### float
  * step1 : 먼저 좌우배치할 모든 블록요소 태그에 float:left 설정
      - float된 요소의 높이값을 브라우저가 인지하지 못함  
  * step2 : float된 요소의 직계부모태그 블록요소에
@@ -55,12 +55,12 @@ table{ border-collapse: collapse; }
 
 <br/>
 
-### 📌 flex
+### flex
  - 
 
 <br/>
 
-### 📌 이미지 전체배경화면
+### 이미지 전체배경화면
 ```
 width:100%; height:100vh; 
 position:absolute; top:0; left:0; 
@@ -70,7 +70,7 @@ background:url(../img/background.jpg) no-repeat center center/cover;
 
 <br/>
 
-### 📌 동영상 전체배경화면
+### 동영상 전체배경화면
 ```
 /* 부모 요소 */
 width:100%; height:100vh; 
@@ -83,7 +83,7 @@ object-fit:cover;
 ```
 <br/>
 
-### 📌 transition
+### transition
   - css 속성을 변경할 때 애니메이션 속도를 조절하는 방법. 속성 변경이 즉시 일어나는 대신, 변화가 일정 기간에 걸쳐 일어나도록 함 
  * 적용가능 속성 
    - 위치 : top,left.. 
@@ -112,7 +112,7 @@ transition: property duration timing delay;
 
 <br/>
 
-### 📌 transform
+### transform
  * 2차원 변환
    - 이동 
        - translateX() : x축으로 특정 크기만큼 이동 
@@ -145,7 +145,7 @@ transition: property duration timing delay;
 
 <br/>
 
-### 📌 @keyframes 애니메이션명
+### @keyframes 애니메이션명
  - animation: 이름 속도 시간 반복횟수; 
  - animation-play-state:paused 애니메이션 멈춤         
 ```
