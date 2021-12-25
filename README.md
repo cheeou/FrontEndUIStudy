@@ -38,7 +38,7 @@ table{ border-collapse: collapse; }
 > * step1 : 먼저 좌우배치할 모든 블록요소 태그에 float:left 설정
 >     - float된 요소의 높이값을 브라우저가 인지하지 못함  
 > * step2 : float된 요소의 직계부모태그 블록요소에
->     - ```.clfix::after{ content:''; display:block; clear:both; } ``` 추가
+>     - ```.clfix::after{ content:''; display:block; clear:both; }``` 추가
 
 <br>
 
