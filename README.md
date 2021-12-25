@@ -142,7 +142,7 @@ transition: property duration timing delay;
 
 @keyframes animation{
     0%{ transform:rotateY(0) rotateX(0deg); }
-    100%{ transform:rotateY(360deg) rotateX(360deg);  }
+    100%{ transform:rotateY(360deg) rotateX(360deg); }
 }
 ```
 
