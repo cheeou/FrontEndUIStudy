@@ -1,0 +1,63 @@
+@charset "UTF-8"; 
+
+*{ margin: 0; padding: 0;}
+ul,ol,li{ list-style: none;}
+a{ text-decoration: none;}
+
+#btnCall{
+    display:block; 
+    width:40px; height:40px;
+    position:relative; 
+    margin:100px;  
+    border:1px solid red; 
+} 
+
+#btnCall::before{
+    content:''; display:block; 
+    width:100%; height:2px; 
+    background:#000; 
+    position:absolute; 
+    top:0; left:0; 
+    transition:all 0.5s; 
+}
+#btnCall::after{
+    content:''; display:block; 
+    width:100%; height:2px; 
+    background:#000; 
+    position:absolute; 
+    bottom:0; left:0; 
+    transition:all 0.5s; 
+}
+
+#btnCall span{
+    display:block; 
+    width:100%; height:2px; background:#000; 
+    position:absolute; top:50%; left:0; 
+    text-indent:-9999px; 
+    margin-top:-1px; 
+    transition:all 0.5s; 
+}
+
+/* #btnCall:hover::before{
+    transform:rotate(45deg); 
+    top:calc(50% - 1px); 
+}
+#btnCall:hover::after{
+    transform:rotate(-45deg); 
+    bottom:calc(50% - 1px); 
+}
+#btnCall:hover span{
+    opacity:0; transform:translateX(100%);
+} */
+
+#btnCall.on::before{
+    transform:rotate(45deg); 
+    top:calc(50% - 1px); 
+}
+#btnCall.on::after{
+    transform:rotate(-45deg); 
+    bottom:calc(50% - 1px); 
+}
+#btnCall.on span{
+    opacity:0; transform:translateX(100%); 
+}

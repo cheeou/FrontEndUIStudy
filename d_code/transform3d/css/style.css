@@ -1,0 +1,53 @@
+@charset "UTF-8"; 
+
+*{ margin: 0; padding: 0;}
+ul,ol,li{ list-style: none;}
+a{ text-decoration: none;}
+ /*
+3차원 변환 
+rotateX() : x축 기준으로 특정 각도만큼 회전 
+rotateY() : y축 기준으로 특정 각도만큼 회전  
+translateZ() : z축 기준으로 특정 거리만큼 이동 
+
+perspective : 원근감을 부여하는 속성 - 부모요소에 적용 
+            400px~2000px 
+
+transform-origin : 요소의 변형이 일어나는 중심축을 가로축, 세로축 기준으로 변경하는 속성 
+ */
+
+.clear { content:''; display:block; clear:both; }
+section{
+    width:100%; 
+} 
+section article{
+    width:200px; height:200px; border:5px solid #000; 
+    margin:100px; position:relative;
+    perspective:900px; 
+}
+section article div{
+    width:100%; height:100%; background:blue; opacity:0.4; 
+    position:absolute; top:0; left:0; 
+}
+
+.box1 div{
+    transform:rotateX(0deg); transition:all 0.5s;  
+}
+.box1:hover div{
+    transform:rotateX(45deg); 
+}
+.box2 div{
+    transform:rotateY(0deg); 
+    transform-origin:left center; 
+    transition:all 0.5s; 
+}
+.box2:hover div{
+    transform:rotateY(45deg); 
+}
+.box3 div {
+    transform:rotateY(0deg);
+    transform-origin:right center; 
+    transition:all 0.5s; 
+}
+.box3:hover div{
+    transform:rotateY(45deg);
+}

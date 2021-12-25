@@ -1,0 +1,78 @@
+@charset "UTF-8"; 
+
+*{ margin: 0; padding: 0;}
+ul,ol,li{ list-style: none;}
+a{ text-decoration: none;}
+  /* 
+  transition
+  - css 속성을 변경할 때 애니메이션 속도를 조절하는 방법. 속성 변경이 즉시 일어나는 대신, 변화가 일정 기간에 걸쳐 일어나도록 함 
+
+  적용가능 속성 
+  위치 - top,left.. 
+  크기 - width, height 
+  박스 속성 - margin, padding 
+  테두리 - border 
+  색상 - color, background 
+  투명도 - opacity 
+  변환속성 -transform   
+  
+  transition-property : 어떤 속성을 변형할지 지정 
+  transition-duration : 몇 초동안 재생할지 지정 
+  transition-timing-function : 가속도 
+  transition-delay : 이벤트 발생후 몇 초 후에 재생할지 지정   
+
+  가속도 
+  linear : 처음부터 끝까지 일정한 속도 
+  ease : 천천히 시작되어 그 다음에는 빨라지고 마지막은 다시 느려짐 
+  ease-in : 전환효과가 천천히 시작 
+  ease-out : 전환효과가 천천히 끝남  
+  ease-in-out : 전환효과가 천천히 시작되어 천천히 끝남 
+  cubic-bezier() cubic-bezier(.41,-1.58,.55,1.64)
+  */
+
+
+section{
+    width:100%; 
+    padding:100px 0; 
+    background:#efefef; 
+
+}
+section .wrap{
+    width:1180px; margin:0 auto; 
+}
+section .wrap::after{
+    content:''; display:block; clear:both; 
+}
+
+section .wrap article{
+    width:280px; height:120px; margin-right:20px; 
+    background:orange; float:left; 
+    opacity:0; 
+    border-radius:0px; 
+    transform:translateY(100px);
+    /* transition:all 0.5s;  */
+    transition-property:all; 
+    transition-duration:0.5s; 
+}
+section .wrap article:last-child{ margin-right:0; }
+
+section:hover article{
+    opacity:1; 
+    border-radius:20px; 
+    background:pink; 
+    height:150px; 
+    transform:translateY(0px)
+}
+
+section article:nth-of-type(1){ 
+    transition-delay:0s; 
+}
+section article:nth-of-type(2){ 
+    transition-delay:0.3s; 
+}
+section article:nth-of-type(3){ 
+    transition-delay:0.6s; 
+}
+section article:nth-of-type(4){ 
+    transition-delay:0.9s; 
+}

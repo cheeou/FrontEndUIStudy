@@ -360,17 +360,8 @@
   position: relative;
 }
 
-#footer .inner .footer-group::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-#footer .inner .footer-group h1 {
-  float: left;
-}
 #footer .inner .footer-group h1 a {
-  font: bold 16px "arial";
+  font: bold 16px/1 "arial";
   color: #fff;
 }
 
@@ -385,7 +376,7 @@
   margin-left: 20px;
 }
 #footer .inner .footer-group .util li a {
-  font: 12px "arial";
+  font: 12px/1 "arial";
   color: #fff;
 }
 
