@@ -6,6 +6,8 @@ a{ text-decoration: none;color: inherit; }
 table{ border-collapse: collapse; }
 ```
 
+<br>
+
 ### 요소 숨김처리
 ```
 .hidden{
@@ -23,10 +25,14 @@ table{ border-collapse: collapse; }
 }
 ```
 
+<br>
+
 ### 텍스트 말줄임
 > - 한줄의 경우: ```display:block; overflow:hidden; text-overflow:ellipse; white-space:nowrap;```
 > - 여러줄의 경우: ```overflow:hidden; text-oveflow:ellipse; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:줄 수;```
 > - [예시 보러가기](https://ekgoddldi.tistory.com/171?category=980959)
+
+<br>
 
 ### float
 > * step1 : 먼저 좌우배치할 모든 블록요소 태그에 float:left 설정
@@ -34,8 +40,12 @@ table{ border-collapse: collapse; }
 > * step2 : float된 요소의 직계부모태그 블록요소에
 >     - ```.clfix::after{ content:''; display:block; clear:both; } ``` 추가
 
+<br>
+
 ### flex
 > - 
+
+<br>
 
 ### 이미지 전체배경화면
 ```
@@ -44,6 +54,8 @@ position:absolute; top:0; left:0;
 z-index:0; 
 background:url(../img/background.jpg) no-repeat center center/cover;
 ```
+
+<br>
 
 ### 동영상 전체배경화면
 ```
@@ -56,6 +68,7 @@ z-index:0;
 width: 100%; hegiht: 100%;
 object-fit:cover; 
 ```
+<br>
 
 ### transition
 >  - css 속성을 변경할 때 애니메이션 속도를 조절하는 방법. 속성 변경이 즉시 일어나는 대신, 변화가 일정 기간에 걸쳐 일어나도록 함 
@@ -83,6 +96,9 @@ object-fit:cover;
 ```
 transition: property duration timing delay; 
 ```
+
+<br>
+
 ### transform
 > * 2차원 변환
 >   - 이동 
@@ -114,6 +130,8 @@ transition: property duration timing delay;
 >       - 부모요소에 preserve-3d를 적용하면 - 자식요소의 3d효과를 유지 
 >       - 주의사항) preserve-3d 와 perspective를 같은 요소에 동시적용하면 모션이 깨짐 
 
+<br>
+
 ### @keyframes 애니메이션명
 > - animation: 이름 속도 시간 반복횟수; 
 > - animation-play-state:paused 애니메이션 멈춤         
@@ -127,3 +145,5 @@ transition: property duration timing delay;
     100%{ transform:rotateY(360deg) rotateX(360deg);  }
 }
 ```
+
+<br>
